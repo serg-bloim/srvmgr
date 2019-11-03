@@ -175,4 +175,7 @@
 0 150 52DA11 // presumably drop all
 0 151 5610B6 // quest reward scaling
 ////////// 0: jmp, 1: call
-
+0 301 531650 // set_warrior_male_max_parameters
+0 302 53166C // set_warrior_female_max_parameters
+0 303 531696 // set_mage_male_max_parameters
+0 304 5316B8 // set_mage_female_max_parameters
