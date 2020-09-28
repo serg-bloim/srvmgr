@@ -82,6 +82,7 @@
     <ClCompile Include="forbidden_items.cpp" />
     <ClCompile Include="itemex.cpp" />
     <ClCompile Include="multiplayer_shop.cpp" />
+    <ClCompile Include="partial_drop.cpp" />
     <ClCompile Include="pktmgr.cpp" />
     <ClCompile Include="player_info.cpp" />
     <ClCompile Include="protolayer_hat.cpp" />

@@ -132,6 +132,9 @@
     <ClCompile Include="multiplayer_shop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="partial_drop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="charcheck.h">
