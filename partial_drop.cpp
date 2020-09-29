@@ -4,19 +4,40 @@
 #define _USE_MATH_DEFINES
 #include "math.h"
 
+void __declspec(naked) __stdcall this_call_impl(void* func, void* thisPtr)
+{
+    __asm
+    {
+        pop     eax     // pop esp
+		pop		eax		// pop eax from the wrapper
+        pop     edx     // pop method ptr
+        pop     ecx     // pop this
+		push	eax		// restore esp from call to the wrapper
+        jmp     edx     // jump to the method
+    }
+}
+int __declspec(naked) __stdcall this_wrapper(int func, void* thisPtr)
+{
+    __asm
+    {
+        call	this_call_impl
+    }
+}
+int __declspec(naked) __stdcall this_wrapper(int func, void* thisPtr, void* val1, void* val2)
+{
+    __asm
+    {
+        call	this_call_impl
+    }
+}
+
+void* (__cdecl *a2_operator_new)(int) = (void* (*)(int))0x005DDF54;
+
 T_LINKEDLIST* __stdcall create_new_item_list()
 {
 	#define FUNC_ITEM_LIST_CONSTRUCTOR 0x00551C0A
-	__asm
-	{
-		push	24h
-		mov		edx, 0x005DDF54 // operator new
-		call	edx
-		add     esp, 4
-		mov     ecx, eax
-		mov		edx, FUNC_ITEM_LIST_CONSTRUCTOR
-		call    edx
-	}
+	T_LINKEDLIST* list = (T_LINKEDLIST*)a2_operator_new(0x24);
+	return (T_LINKEDLIST*)this_wrapper(FUNC_ITEM_LIST_CONSTRUCTOR, list);
 }
 
 float rnd(){
@@ -32,52 +53,32 @@ float rnd_gaussian(float mu, float sigma){
 	return z0 * sigma + mu;
 }
 
-void insert(T_LINKEDLIST * list, T_SRV_LINKED_NODE* node){
-	T_SRV_LINKED_NODE* first = list->first_node;
-	node->next = first;
-	list->first_node = node;
-	node->prev = 0;
-	if( first != 0){
-		first->prev = node;
-	}
-	if(list->last_node == 0){
-		list->last_node = node;
-	}
-	list->size++;
-}
 
 void a2insert(T_LINKEDLIST * list, int pos, T_INVENTORY_ITEM* item){
-	__asm{
-		mov		ecx, item
-		push	ecx
-		mov		ecx, pos
-		push	ecx
-		mov		ecx, list
-		mov		edx, 0x00551FC3
-		call	edx
-	}
-}
-T_INVENTORY_ITEM* a2remove(T_LINKEDLIST * list, int pos, int n){
-	__asm{
-		mov		ecx, n
-		push	ecx
-		mov		ecx, pos
-		push	ecx
-		mov		ecx, list
-		mov		edx, 0x00552E42
-		call	edx
-	}
+	this_wrapper(0x00551FC3, (void*)list, (void*)pos, (void*)item);
 }
 
-void remove(T_LINKEDLIST * list, T_SRV_LINKED_NODE* node){
-	if(list->first_node != nullptr){
-		list->first_node->prev = node;
-	}
-	node->prev = nullptr;
-	node->next=list->first_node;
-	list->first_node = node;
-	list->size++;
+void a2insert(T_LINKEDLIST * list, T_INVENTORY_ITEM* item){
+    a2insert(list, list->maxInd, item);
 }
+
+T_INVENTORY_ITEM* a2remove(T_LINKEDLIST * list, int pos, int n){
+	return (T_INVENTORY_ITEM*)this_wrapper(0x00552E42, (void*)list, (void*)pos, (void*)n);
+	//__asm{
+	//	mov		ecx, n
+	//	push	ecx
+	//	mov		ecx, pos
+	//	push	ecx
+	//	mov		ecx, list
+	//	mov		edx, 0x00552E42
+	//	call	edx
+	//}
+}
+
+T_INVENTORY_ITEM* unit_unwear_item(T_UNIT * unit, T_INVENTORY_ITEM* item){
+	return 0;
+}
+
 struct IndNum{
 	__int16 ind;
 	__int16 num;
@@ -148,6 +149,9 @@ bool __stdcall unit_has_weared_items(T_UNIT* unit)
 }
 void __stdcall drop_rnd_weared_items(T_UNIT* unit, T_LINKEDLIST * item_list_dst, float probability)
 {
+	if(unit->clazz != (void *)0x0060F0C8){
+		return;
+	}
 	for (int i = 1; i < 13; ++i )
 	{
 		if(getDropNum(1, probability) > 0){

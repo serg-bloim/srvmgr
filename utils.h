@@ -49,7 +49,7 @@ struct __declspec(align(4)) T_LINKEDLIST
 };
 struct __declspec(align(4)) T_UNIT
 {
-  void *dword0;
+  void *clazz;
   _BYTE gap0[10];
   _WORD wordE;
   _DWORD position;
