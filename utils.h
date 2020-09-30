@@ -16,7 +16,7 @@ struct T_INVENTORY_ITEM
   struct CPlex *pcplex34;
   _DWORD dword38;
   _DWORD dword3C;
-  _WORD id;
+  unsigned __int16 id;
   _WORD amount;
   _BYTE byte44;
   _BYTE byte45;
@@ -50,7 +50,7 @@ struct __declspec(align(4)) T_LINKEDLIST
 struct __declspec(align(4)) T_UNKNOWN_STRUCT_1{
 
 };
-
+struct T_UNIT;
 struct  T_UNKNOWN_STRUCT
 {
     _BYTE gap0[4];
@@ -64,7 +64,7 @@ struct  T_UNKNOWN_STRUCT
     _BYTE gap3[2];
     _WORD word32;
     _BYTE gap4[4];
-    T_SRV_UNIT * pt_srv_unit38;
+    T_UNIT * pt_srv_unit38;
     _DWORD dword3C;
     _BYTE gap5[2];
     _BYTE byte42;

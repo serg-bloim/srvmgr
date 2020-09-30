@@ -3,33 +3,7 @@
 #include <vector>
 #define _USE_MATH_DEFINES
 #include "math.h"
-
-void __declspec(naked) __stdcall this_call_impl(void* func, void* thisPtr)
-{
-    __asm
-    {
-        pop     eax     // pop esp
-		pop		eax		// pop eax from the wrapper
-        pop     edx     // pop method ptr
-        pop     ecx     // pop this
-		push	eax		// restore esp from call to the wrapper
-        jmp     edx     // jump to the method
-    }
-}
-int __declspec(naked) __stdcall this_wrapper(int func, void* thisPtr)
-{
-    __asm
-    {
-        call	this_call_impl
-    }
-}
-int __declspec(naked) __stdcall this_wrapper(int func, void* thisPtr, void* val1, void* val2)
-{
-    __asm
-    {
-        call	this_call_impl
-    }
-}
+#include "this_call.h"
 
 void* (__cdecl *a2_operator_new)(int) = (void* (*)(int))0x005DDF54;
 
@@ -37,7 +11,7 @@ T_LINKEDLIST* __stdcall create_new_item_list()
 {
 	#define FUNC_ITEM_LIST_CONSTRUCTOR 0x00551C0A
 	T_LINKEDLIST* list = (T_LINKEDLIST*)a2_operator_new(0x24);
-	return (T_LINKEDLIST*)this_wrapper(FUNC_ITEM_LIST_CONSTRUCTOR, list);
+	return (T_LINKEDLIST*)this_call(FUNC_ITEM_LIST_CONSTRUCTOR, list);
 }
 
 float rnd(){
@@ -55,7 +29,7 @@ float rnd_gaussian(float mu, float sigma){
 
 
 void a2insert(T_LINKEDLIST * list, int pos, T_INVENTORY_ITEM* item){
-	this_wrapper(0x00551FC3, (void*)list, (void*)pos, (void*)item);
+	this_call(0x00551FC3, (void*)list, (void*)pos, (void*)item);
 }
 
 void a2insert(T_LINKEDLIST * list, T_INVENTORY_ITEM* item){
@@ -63,7 +37,7 @@ void a2insert(T_LINKEDLIST * list, T_INVENTORY_ITEM* item){
 }
 
 T_INVENTORY_ITEM* a2remove(T_LINKEDLIST * list, int pos, int n){
-	return (T_INVENTORY_ITEM*)this_wrapper(0x00552E42, (void*)list, (void*)pos, (void*)n);
+	return (T_INVENTORY_ITEM*)this_call(0x00552E42, (void*)list, (void*)pos, (void*)n);
 	//__asm{
 	//	mov		ecx, n
 	//	push	ecx
@@ -195,27 +169,34 @@ void __stdcall drop_rnd_weared_items(T_UNIT* unit, T_LINKEDLIST * item_list_dst,
 
 int CopyInventoryToMap(T_UNIT *unit, T_LINKEDLIST *inventory, int a3, int a4){
 #define FUNC_COPY_INVENTORY_TO_MAP 0x0052D8D3
-	__asm{
-		mov		ecx, a4
-		push	ecx
-		mov		ecx, a3
-		push	ecx
-		mov		ecx, inventory
-		push	ecx
-		mov		ecx, unit	// this
-		mov		edx, FUNC_COPY_INVENTORY_TO_MAP
-		call    edx 
-	}
+	return this_call(FUNC_COPY_INVENTORY_TO_MAP, (void *)unit, (void *)inventory, (void *)a3, (void *)a4);
+	//__asm{
+	//	mov		ecx, a4
+	//	push	ecx
+	//	mov		ecx, a3
+	//	push	ecx
+	//	mov		ecx, inventory
+	//	push	ecx
+	//	mov		ecx, unit	// this
+	//	mov		edx, FUNC_COPY_INVENTORY_TO_MAP
+	//	call    edx 
+	//}
 }
-const int T_UNIT_SKIP_DROP = 1;
-const int T_UNIT_SKIP_DMG = 2;
-bool nonStandardUnit(T_UNIT* unit, int spec){
-	#define MAGIC_ITEM 0x1102
+const int T_UNIT_SKIP_MAN = 0x1102;
+const int T_UNIT_SKIP_DROP = 0xBA18;
+const int T_UNIT_SKIP_DMG = 0xA203;
+bool nonStandardUnit(T_UNIT* unit, unsigned __int16 spec){
 	if(unit && unit->inventory && unit->inventory->size >= 1){
-		T_INVENTORY_ITEM* item = unit->inventory->first_node->value;
-			if(item && item->id == MAGIC_ITEM){
-				return item->amount & spec;
+		T_SRV_LINKED_NODE* node = unit->inventory->first_node;
+		for(int i = 0; i < 3; i++){
+			if(!node){
+				break;
 			}
+			if(node->value->id == spec){
+				return true;
+			}
+			node=node->next;
+		}
 	}
 	return false;
 }
@@ -278,6 +259,23 @@ int __stdcall check_unit_dmg(T_UNIT *unit, int a2, int a3){
 	}
 	return res;
 }
+int __stdcall imp_check_unit_man(T_UNIT *unit){
+	__asm{
+		push	eax	// store for future
+		push	ecx // store for future
+		push	T_UNIT_SKIP_MAN
+		push	ecx
+		call	nonStandardUnit
+		test	eax, eax
+		pop		ecx
+		pop		eax
+		je		special_case
+std_case:
+		mov		[ecx+9Ah], ax
+special_case:
+	}
+}
+
 int __declspec(naked) imp_check_unit_dmg()
 { // 0053693C
     __asm

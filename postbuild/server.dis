@@ -189,6 +189,7 @@ CALL fix_spell_duration_overflow 53C52A // fix spell duration overflow
 CALL imp_drop_partially 0052E264 // implement partial drop after death
 CALL imp_drop_partially 0052DEEF // implement partial drop after death
 CALL imp_check_unit_dmg 0053693C
+CALL imp_check_unit_man 005399A9
 
 JMP set_warrior_male_max_parameters 531650 // set_warrior_male_max_parameters
 JMP set_warrior_female_max_parameters 53166C // set_warrior_female_max_parameters
