@@ -47,13 +47,45 @@ struct __declspec(align(4)) T_LINKEDLIST
   int maxInd;
   _DWORD dword20;
 };
+struct __declspec(align(4)) T_UNKNOWN_STRUCT_1{
+
+};
+
+struct  T_UNKNOWN_STRUCT
+{
+    _BYTE gap0[4];
+    _WORD word4;
+    _BYTE gap1[18];
+    _DWORD dword18;
+    _BYTE gap2[8];
+    _DWORD dword24;
+    _DWORD dword28;
+    int unitType;
+    _BYTE gap3[2];
+    _WORD word32;
+    _BYTE gap4[4];
+    T_SRV_UNIT * pt_srv_unit38;
+    _DWORD dword3C;
+    _BYTE gap5[2];
+    _BYTE byte42;
+    _BYTE gap6[2565];
+    _DWORD dwordA48;
+    _DWORD dwordA4C;
+    _BYTE gap7[4];
+    _DWORD dwordA54;
+    _DWORD dwordA58;
+    _BYTE gap8[4];
+    _DWORD dwordA60;
+};
+
+
 struct __declspec(align(4)) T_UNIT
 {
   void *clazz;
   _BYTE gap0[10];
   _WORD wordE;
   _DWORD position;
-  _DWORD dword14;
+  T_UNKNOWN_STRUCT *unknown_struct;
   _BYTE gap1[12];
   int *pint24;
   _DWORD dword28;

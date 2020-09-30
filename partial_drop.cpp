@@ -220,18 +220,8 @@ bool nonStandardUnit(T_UNIT* unit, int spec){
 	return false;
 }
 #define uint32 unsigned __int32
-bool unit_should_drop_entire_inventory(T_UNIT* unit){
-	uint32 ptr_unit = (uint32) unit;
-	if(ptr_unit){
-		uint32 ptr_unit_14 = ptr_unit + 0x14;
-		if(ptr_unit_14){
-			uint32 ptr_unit_14_2c = *(uint32 *)ptr_unit_14 + 0x2C;
-			if(*(int*)ptr_unit_14_2c){
-				return true;
-			}
-		}
-	}
-	return false;
+bool isPlayerUnit(T_UNIT* unit){
+	return unit->unknown_struct->unitType == 0;
 }
 void __stdcall drop_partially(T_UNIT* unit, int a3, int a4)
 {
@@ -239,15 +229,15 @@ void __stdcall drop_partially(T_UNIT* unit, int a3, int a4)
 		if(nonStandardUnit(unit, T_UNIT_SKIP_DROP)){
 			return;
 		}
-		if(unit_should_drop_entire_inventory(unit)){
-			// If this is a monster, we drop all items like it's done in original a2
-			CopyInventoryToMap(unit, unit->inventory, a3, a4);
-			unit->inventory = create_new_item_list();
-		}else{
+		if(isPlayerUnit(unit)){
 			T_LINKEDLIST* bag = create_new_item_list();
 			drop_rnd_items(unit->inventory, bag, Config::InventoryDropPropapility);
 			drop_rnd_weared_items(unit, bag, Config::WearDropPropapility);
 			CopyInventoryToMap(unit, bag, a3, a4);
+		}else{
+			// If this is a monster, we drop all items like it's done in original a2
+			CopyInventoryToMap(unit, unit->inventory, a3, a4);
+			unit->inventory = create_new_item_list();
 		}
 	}
 }
