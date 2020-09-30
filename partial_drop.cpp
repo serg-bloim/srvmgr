@@ -150,7 +150,7 @@ bool __stdcall unit_has_weared_items(T_UNIT* unit)
 void __stdcall drop_rnd_weared_items(T_UNIT* unit, T_LINKEDLIST * item_list_dst, float probability)
 {
 	if(unit->clazz != (void *)0x0060F0C8){
-		return;
+		return;		// unit does not support weared items
 	}
 	for (int i = 1; i < 13; ++i )
 	{
@@ -219,20 +219,37 @@ bool nonStandardUnit(T_UNIT* unit, int spec){
 	}
 	return false;
 }
-
-T_LINKEDLIST* __stdcall drop_partially(T_UNIT* unit, int a3, int a4)
+#define uint32 unsigned __int32
+bool unit_should_drop_entire_inventory(T_UNIT* unit){
+	uint32 ptr_unit = (uint32) unit;
+	if(ptr_unit){
+		uint32 ptr_unit_14 = ptr_unit + 0x14;
+		if(ptr_unit_14){
+			uint32 ptr_unit_14_2c = *(uint32 *)ptr_unit_14 + 0x2C;
+			if(*(int*)ptr_unit_14_2c){
+				return true;
+			}
+		}
+	}
+	return false;
+}
+void __stdcall drop_partially(T_UNIT* unit, int a3, int a4)
 {
 	if(unit && unit->inventory && (unit->inventory->size > 0 || unit_has_weared_items(unit))){
 		if(nonStandardUnit(unit, T_UNIT_SKIP_DROP)){
-			return 0;
+			return;
 		}
-		T_LINKEDLIST* bag = create_new_item_list();
-		drop_rnd_items(unit->inventory, bag, Config::InventoryDropPropapility);
-		drop_rnd_weared_items(unit, bag, Config::WearDropPropapility);
-		CopyInventoryToMap(unit, bag, a3, a4);
-		return bag;
+		if(unit_should_drop_entire_inventory(unit)){
+			// If this is a monster, we drop all items like it's done in original a2
+			CopyInventoryToMap(unit, unit->inventory, a3, a4);
+			unit->inventory = create_new_item_list();
+		}else{
+			T_LINKEDLIST* bag = create_new_item_list();
+			drop_rnd_items(unit->inventory, bag, Config::InventoryDropPropapility);
+			drop_rnd_weared_items(unit, bag, Config::WearDropPropapility);
+			CopyInventoryToMap(unit, bag, a3, a4);
+		}
 	}
-	return 0;
 }
 
 void __declspec(naked) imp_drop_partially()
