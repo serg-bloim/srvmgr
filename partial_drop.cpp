@@ -185,7 +185,7 @@ int CopyInventoryToMap(T_UNIT *unit, T_LINKEDLIST *inventory, int a3, int a4){
 const int T_UNIT_SKIP_MAN = 0x1102;
 const int T_UNIT_SKIP_DROP = 0xBA18;
 const int T_UNIT_SKIP_DMG = 0xA203;
-bool nonStandardUnit(T_UNIT* unit, unsigned __int16 spec){
+bool __stdcall nonStandardUnit(T_UNIT* unit, unsigned __int16 spec){
 	if(unit && unit->inventory && unit->inventory->size >= 1){
 		T_SRV_LINKED_NODE* node = unit->inventory->first_node;
 		for(int i = 0; i < 3; i++){
@@ -259,19 +259,19 @@ int __stdcall check_unit_dmg(T_UNIT *unit, int a2, int a3){
 	}
 	return res;
 }
-int __stdcall imp_check_unit_man(T_UNIT *unit){
+int __stdcall imp_check_unit_man(){
 	__asm{
 		push	eax	// store for future
 		push	ecx // store for future
 		push	T_UNIT_SKIP_MAN
 		push	ecx
 		call	nonStandardUnit
-		test	eax, eax
+		cmp		al, 1
 		pop		ecx
 		pop		eax
 		je		special_case
 std_case:
-		mov		[ecx+9Ah], ax
+		mov		[ecx+0x9A], ax
 special_case:
 	}
 }
