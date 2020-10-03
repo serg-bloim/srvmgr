@@ -5397,7 +5397,7 @@
 			<name>Potion Big Healing</name>
 			<price>300</price>
 			<weight>2</weight>
-			<effect>health=+2</effect>
+			<effect>health=+3</effect>
 		</item>
 		<item>
 			<name>Potion Mana Regeneration</name>
