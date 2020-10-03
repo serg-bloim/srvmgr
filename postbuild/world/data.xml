@@ -433,7 +433,7 @@
 			<name>health</name>
 			<manaCost>10</manaCost>
 			<affectMin>3</affectMin>
-			<affectMax>50</affectMax>
+			<affectMax>30</affectMax>
 			<usableBy>-1</usableBy>
 			<in_WarriorWeapon>0</in_WarriorWeapon>
 			<in_WarriorShield>0</in_WarriorShield>
@@ -464,7 +464,7 @@
 			<name>healthMax</name>
 			<manaCost>10</manaCost>
 			<affectMin>3</affectMin>
-			<affectMax>50</affectMax>
+			<affectMax>30</affectMax>
 			<usableBy>3</usableBy>
 			<in_WarriorWeapon>0</in_WarriorWeapon>
 			<in_WarriorShield>0</in_WarriorShield>
@@ -526,7 +526,7 @@
 			<name>mana</name>
 			<manaCost>10</manaCost>
 			<affectMin>3</affectMin>
-			<affectMax>50</affectMax>
+			<affectMax>30</affectMax>
 			<usableBy>-1</usableBy>
 			<in_WarriorWeapon>0</in_WarriorWeapon>
 			<in_WarriorShield>0</in_WarriorShield>
@@ -557,7 +557,7 @@
 			<name>manaMax</name>
 			<manaCost>10</manaCost>
 			<affectMin>3</affectMin>
-			<affectMax>50</affectMax>
+			<affectMax>30</affectMax>
 			<usableBy>2</usableBy>
 			<in_WarriorWeapon>0</in_WarriorWeapon>
 			<in_WarriorShield>0</in_WarriorShield>
