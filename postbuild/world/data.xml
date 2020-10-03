@@ -5005,7 +5005,7 @@
 		</item>
 		<item>
 			<name>Scroll Fire Arrow</name>
-			<price>100</price>
+			<price>150</price>
 			<weight>1</weight>
 			<effect>castSpell=Fire_Arrow:50</effect>
 		</item>
@@ -5029,7 +5029,7 @@
 		</item>
 		<item>
 			<name>Scroll Ice Missile</name>
-			<price>100</price>
+			<price>150</price>
 			<weight>1</weight>
 			<effect>castSpell=Ice_Missile:50</effect>
 		</item>
@@ -5059,7 +5059,7 @@
 		</item>
 		<item>
 			<name>Scroll Lightning</name>
-			<price>100</price>
+			<price>150</price>
 			<weight>1</weight>
 			<effect>castSpell=Lightning:50</effect>
 		</item>
@@ -5095,7 +5095,7 @@
 		</item>
 		<item>
 			<name>Scroll Diamond Dust</name>
-			<price>100</price>
+			<price>150</price>
 			<weight>1</weight>
 			<effect>castSpell=Diamond_Dust:50</effect>
 		</item>
