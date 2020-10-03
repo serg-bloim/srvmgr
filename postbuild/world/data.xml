@@ -712,7 +712,7 @@
 			<name>defence</name>
 			<manaCost>40</manaCost>
 			<affectMin>1</affectMin>
-			<affectMax>20</affectMax>
+			<affectMax>10</affectMax>
 			<usableBy>3</usableBy>
 			<in_WarriorWeapon>100</in_WarriorWeapon>
 			<in_WarriorShield>100</in_WarriorShield>
@@ -898,7 +898,7 @@
 			<name>protectionFire</name>
 			<manaCost>10</manaCost>
 			<affectMin>5</affectMin>
-			<affectMax>30</affectMax>
+			<affectMax>25</affectMax>
 			<usableBy>3</usableBy>
 			<in_WarriorWeapon>100</in_WarriorWeapon>
 			<in_WarriorShield>165</in_WarriorShield>
@@ -929,7 +929,7 @@
 			<name>protectionWater</name>
 			<manaCost>10</manaCost>
 			<affectMin>5</affectMin>
-			<affectMax>30</affectMax>
+			<affectMax>25</affectMax>
 			<usableBy>3</usableBy>
 			<in_WarriorWeapon>100</in_WarriorWeapon>
 			<in_WarriorShield>180</in_WarriorShield>
@@ -960,7 +960,7 @@
 			<name>protectionAir</name>
 			<manaCost>10</manaCost>
 			<affectMin>5</affectMin>
-			<affectMax>30</affectMax>
+			<affectMax>25</affectMax>
 			<usableBy>3</usableBy>
 			<in_WarriorWeapon>100</in_WarriorWeapon>
 			<in_WarriorShield>195</in_WarriorShield>
@@ -991,7 +991,7 @@
 			<name>protectionEarth</name>
 			<manaCost>15</manaCost>
 			<affectMin>5</affectMin>
-			<affectMax>30</affectMax>
+			<affectMax>25</affectMax>
 			<usableBy>3</usableBy>
 			<in_WarriorWeapon>100</in_WarriorWeapon>
 			<in_WarriorShield>210</in_WarriorShield>
