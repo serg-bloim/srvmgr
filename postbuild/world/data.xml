@@ -45061,7 +45061,7 @@
 			<empty>0</empty>
 			<name>Fire Arrow</name>
 			<level>3</level>
-			<manaCost>3</manaCost>
+			<manaCost>7</manaCost>
 			<sphere>1</sphere>
 			<item>0</item>
 			<spellTarget>1</spellTarget>
@@ -45169,7 +45169,7 @@
 			<empty>0</empty>
 			<name>Ice Missile</name>
 			<level>3</level>
-			<manaCost>3</manaCost>
+			<manaCost>10</manaCost>
 			<sphere>2</sphere>
 			<item>0</item>
 			<spellTarget>1</spellTarget>
@@ -45466,7 +45466,7 @@
 			<empty>0</empty>
 			<name>Diamond Dust</name>
 			<level>3</level>
-			<manaCost>3</manaCost>
+			<manaCost>7</manaCost>
 			<sphere>4</sphere>
 			<item>0</item>
 			<spellTarget>1</spellTarget>
