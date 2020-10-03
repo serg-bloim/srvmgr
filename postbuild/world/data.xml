@@ -10405,7 +10405,7 @@
 				<count>3</count>
 				<item_version>0</item_version>
 				<item>Fire Ball</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Ice Missile</item>
 			</knownSpells>
 			<skillFire>20</skillFire>
@@ -10480,7 +10480,7 @@
 				<count>3</count>
 				<item_version>0</item_version>
 				<item>Fire Ball</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Lightning</item>
 			</knownSpells>
 			<skillFire>50</skillFire>
@@ -10556,7 +10556,7 @@
 				<item_version>0</item_version>
 				<item>Darkness</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Poison Cloud</item>
 				<item>Prismatic Spray</item>
 				<item>Wall of Fire</item>
@@ -10865,7 +10865,7 @@
 				<item_version>0</item_version>
 				<item>Diamond Dust</item>
 				<item>Fire Arrow</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 			</knownSpells>
 			<skillFire>20</skillFire>
@@ -10942,7 +10942,7 @@
 				<item>Diamond Dust</item>
 				<item>Fire Ball</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 			</knownSpells>
 			<skillFire>50</skillFire>
@@ -11019,7 +11019,7 @@
 				<item>Bless</item>
 				<item>Diamond Dust</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 				<item>Wall of Fire</item>
 			</knownSpells>
@@ -11096,7 +11096,7 @@
 				<item_version>0</item_version>
 				<item>Bless</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 				<item>Stone Curse</item>
 				<item>Wall of Fire</item>
@@ -12540,11 +12540,10 @@
 			<serverId>672</serverId>
 			<knownSpellsAreEmpty>0</knownSpellsAreEmpty>
 			<knownSpells>
-				<count>5</count>
+				<count>4</count>
 				<item_version>0</item_version>
 				<item>Darkness</item>
 				<item>Drain Life</item>
-				<item>Heal</item>
 				<item>Prismatic Spray</item>
 				<item>Shield</item>
 			</knownSpells>
@@ -12617,12 +12616,11 @@
 			<serverId>673</serverId>
 			<knownSpellsAreEmpty>0</knownSpellsAreEmpty>
 			<knownSpells>
-				<count>7</count>
+				<count>6</count>
 				<item_version>0</item_version>
 				<item>Bless</item>
 				<item>Darkness</item>
 				<item>Drain Life</item>
-				<item>Heal</item>
 				<item>Invisibility</item>
 				<item>Prismatic Spray</item>
 				<item>Shield</item>
@@ -12853,7 +12851,7 @@
 			<knownSpells>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 			</knownSpells>
 			<skillFire>-1</skillFire>
@@ -13204,7 +13202,7 @@
 			<knownSpells>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 			</knownSpells>
 			<skillFire>50</skillFire>
@@ -13278,7 +13276,7 @@
 			<knownSpells>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 			</knownSpells>
 			<skillFire>100</skillFire>
@@ -13352,7 +13350,7 @@
 			<knownSpells>
 				<count>3</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Ice Missile</item>
 				<item>Shield</item>
 			</knownSpells>
@@ -13428,7 +13426,7 @@
 				<count>3</count>
 				<item_version>0</item_version>
 				<item>Diamond Dust</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 			</knownSpells>
 			<skillFire>50</skillFire>
@@ -13503,7 +13501,7 @@
 				<count>4</count>
 				<item_version>0</item_version>
 				<item>Diamond Dust</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Ice Missile</item>
 				<item>Shield</item>
 			</knownSpells>
@@ -13578,7 +13576,7 @@
 			<knownSpells>
 				<count>3</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Ice Missile</item>
 				<item>Shield</item>
 			</knownSpells>
@@ -13654,7 +13652,7 @@
 				<count>4</count>
 				<item_version>0</item_version>
 				<item>Ice Missile</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 				<item>Stone Curse</item>
 			</knownSpells>
@@ -13729,7 +13727,7 @@
 			<knownSpells>
 				<count>3</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 				<item>Stone Curse</item>
 			</knownSpells>
@@ -13805,7 +13803,7 @@
 				<count>3</count>
 				<item_version>0</item_version>
 				<item>Blizzard</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 			</knownSpells>
 			<skillFire>100</skillFire>
@@ -13880,7 +13878,7 @@
 				<count>4</count>
 				<item_version>0</item_version>
 				<item>Ice Missile</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 				<item>Stone Curse</item>
 			</knownSpells>
@@ -13956,7 +13954,7 @@
 				<count>4</count>
 				<item_version>0</item_version>
 				<item>Poison Cloud</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 				<item>Stone Curse</item>
 			</knownSpells>
@@ -14032,7 +14030,7 @@
 				<count>3</count>
 				<item_version>0</item_version>
 				<item>Poison Cloud</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Blizzard</item>
 			</knownSpells>
 			<skillFire>100</skillFire>
@@ -14107,7 +14105,7 @@
 				<count>4</count>
 				<item_version>0</item_version>
 				<item>Poison Cloud</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Blizzard</item>
 				<item>Stone Curse</item>
 			</knownSpells>
@@ -14183,7 +14181,7 @@
 				<count>4</count>
 				<item_version>0</item_version>
 				<item>Blizzard</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Poison Cloud</item>
 				<item>Stone Curse</item>
 			</knownSpells>
@@ -16637,7 +16635,7 @@
 				<item_version>0</item_version>
 				<item>Fire Arrow</item>
 				<item>Fire Ball</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 			</knownSpells>
 			<skillFire>20</skillFire>
@@ -16711,7 +16709,7 @@
 			<knownSpells>
 				<count>4</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Ice Missile</item>
 				<item>Poison Cloud</item>
 				<item>Shield</item>
@@ -16788,7 +16786,7 @@
 				<count>5</count>
 				<item_version>0</item_version>
 				<item>Darkness</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Prismatic Spray</item>
 				<item>Poison Cloud</item>
 				<item>Shield</item>
@@ -16865,7 +16863,7 @@
 				<count>8</count>
 				<item_version>0</item_version>
 				<item>Darkness</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Invisibility</item>
 				<item>Poison Cloud</item>
 				<item>Prismatic Spray</item>
@@ -17435,7 +17433,7 @@
 				<item>Bless</item>
 				<item>Diamond Dust</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Poison Cloud</item>
 				<item>Protection from Air</item>
 				<item>Protection from Earth</item>
@@ -17516,7 +17514,7 @@
 				<item>Bless</item>
 				<item>Diamond Dust</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Poison Cloud</item>
 				<item>Protection from Air</item>
 				<item>Protection from Earth</item>
@@ -17597,7 +17595,7 @@
 				<item>Bless</item>
 				<item>Diamond Dust</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Poison Cloud</item>
 				<item>Protection from Air</item>
 				<item>Protection from Earth</item>
@@ -17680,7 +17678,7 @@
 				<item>Bless</item>
 				<item>Diamond Dust</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Poison Cloud</item>
 				<item>Protection from Air</item>
 				<item>Protection from Earth</item>
@@ -17764,7 +17762,7 @@
 				<item>Bless</item>
 				<item>Diamond Dust</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Invisibility</item>
 				<item>Poison Cloud</item>
 				<item>Protection from Air</item>
@@ -17851,7 +17849,7 @@
 				<item>Blizzard</item>
 				<item>Diamond Dust</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Invisibility</item>
 				<item>Poison Cloud</item>
 				<item>Protection from Air</item>
@@ -17938,7 +17936,7 @@
 				<item>Blizzard</item>
 				<item>Diamond Dust</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Invisibility</item>
 				<item>Poison Cloud</item>
 				<item>Protection from Air</item>
@@ -20018,7 +20016,7 @@
 			<knownSpells>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 			</knownSpells>
 			<equipItem1></equipItem1>
@@ -20064,7 +20062,7 @@
 			<knownSpells>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 			</knownSpells>
 			<equipItem1>Wood Staff {castSpell=Fire_Arrow:5}</equipItem1>
@@ -20326,7 +20324,7 @@
 				<item>Bless</item>
 				<item>Fire Arrow</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Protection from Fire</item>
 				<item>Shield</item>
 			</knownSpells>
@@ -20895,7 +20893,7 @@
 				<item_version>0</item_version>
 				<item>Fire Arrow</item>
 				<item>Fire Ball</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Ice Missile</item>
 				<item>Invisibility</item>
 				<item>Poison Cloud</item>
@@ -21443,7 +21441,7 @@
 				<item>Drain Life</item>
 				<item>Fire Arrow</item>
 				<item>Fire Ball</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Ice Missile</item>
 				<item>Invisibility</item>
 				<item>Poison Cloud</item>
@@ -21997,7 +21995,7 @@
 				<item>Fire Arrow</item>
 				<item>Fire Ball</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Ice Missile</item>
 				<item>Invisibility</item>
 				<item>Poison Cloud</item>
@@ -22058,7 +22056,7 @@
 				<item>Darkness</item>
 				<item>Diamond Dust</item>
 				<item>Fire Arrow</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Invisibility</item>
 				<item>Light</item>
 				<item>Lightning</item>
@@ -22118,7 +22116,7 @@
 				<item>Diamond Dust</item>
 				<item>Drain Life</item>
 				<item>Fire Arrow</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Ice Missile</item>
 				<item>Invisibility</item>
 				<item>Light</item>
@@ -26529,7 +26527,7 @@
 			<knownSpells>
 				<count>4</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Lightning</item>
 				<item>Shield</item>
 				<item>Stone Curse</item>
@@ -26657,7 +26655,7 @@
 			<knownSpells>
 				<count>4</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Poison Cloud</item>
 				<item>Shield</item>
 				<item>Stone Curse</item>
@@ -26703,10 +26701,9 @@
 			<serverId>2004</serverId>
 			<knownSpellsAreEmpty>0</knownSpellsAreEmpty>
 			<knownSpells>
-				<count>4</count>
+				<count>3</count>
 				<item_version>0</item_version>
 				<item>Drain Life</item>
-				<item>Heal</item>
 				<item>Prismatic Spray</item>
 				<item>Shield</item>
 			</knownSpells>
@@ -26753,7 +26750,7 @@
 			<knownSpells>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 			</knownSpells>
 			<equipItem1>Elven Magic Wood Staff {castSpell=Stone_Curse:50}</equipItem1>
@@ -26919,7 +26916,7 @@
 			<knownSpells>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 			</knownSpells>
 			<equipItem1></equipItem1>
@@ -27172,7 +27169,7 @@
 			<knownSpells>
 				<count>3</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Lightning</item>
 				<item>Shield</item>
 			</knownSpells>
@@ -27219,7 +27216,7 @@
 			<knownSpells>
 				<count>4</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Prismatic Spray</item>
 				<item>Shield</item>
 				<item>Stone Curse</item>
@@ -27467,7 +27464,7 @@
 			<knownSpells>
 				<count>3</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Lightning</item>
 				<item>Shield</item>
 			</knownSpells>
@@ -27516,7 +27513,7 @@
 				<item_version>0</item_version>
 				<item>Diamond Dust</item>
 				<item>Fire Ball</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 			</knownSpells>
 			<equipItem1>Uncommon Wood Staff {castSpell=Fire_Arrow:35}</equipItem1>
@@ -27923,7 +27920,7 @@
 				<count>3</count>
 				<item_version>0</item_version>
 				<item>Fire Arrow</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 			</knownSpells>
 			<equipItem1>Wood Shaman Staff {castSpell=Fire_Arrow:1}</equipItem1>
@@ -28090,7 +28087,7 @@
 				<count>4</count>
 				<item_version>0</item_version>
 				<item>Fire Ball</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Lightning</item>
 				<item>Shield</item>
 			</knownSpells>
@@ -28497,7 +28494,7 @@
 			<knownSpells>
 				<count>3</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Ice Missile</item>
 				<item>Shield</item>
 			</knownSpells>
@@ -28706,7 +28703,7 @@
 				<item_version>0</item_version>
 				<item>Diamond Dust</item>
 				<item>Fire Ball</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 			</knownSpells>
 			<equipItem1>Uncommon Wood Staff {castSpell=Ice_Missile:5}</equipItem1>
@@ -28913,7 +28910,7 @@
 				<count>5</count>
 				<item_version>0</item_version>
 				<item>Bless</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Lightning</item>
 				<item>Poison Cloud</item>
 				<item>Shield</item>
@@ -29123,7 +29120,7 @@
 				<item_version>0</item_version>
 				<item>Bless</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Prismatic Spray</item>
 				<item>Shield</item>
 				<item>Stone Curse</item>
@@ -29772,7 +29769,7 @@
 				<count>5</count>
 				<item_version>0</item_version>
 				<item>Bless</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Lightning</item>
 				<item>Poison Cloud</item>
 				<item>Shield</item>
@@ -29982,7 +29979,7 @@
 				<item_version>0</item_version>
 				<item>Diamond Dust</item>
 				<item>Fire Ball</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Shield</item>
 			</knownSpells>
 			<equipItem1>Uncommon Wood Staff {castSpell=Fire_Arrow:5}</equipItem1>
@@ -30922,7 +30919,7 @@
 				<item>Bless</item>
 				<item>Diamond Dust</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Lightning</item>
 				<item>Protection from Earth</item>
 				<item>Shield</item>
@@ -30973,7 +30970,7 @@
 				<item>Bless</item>
 				<item>Diamond Dust</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Lightning</item>
 				<item>Protection from Air</item>
 				<item>Protection from Earth</item>
@@ -31026,7 +31023,7 @@
 				<item>Control Spirit</item>
 				<item>Diamond Dust</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Lightning</item>
 				<item>Prismatic Spray</item>
 				<item>Protection from Air</item>
@@ -31080,7 +31077,7 @@
 				<item>Control Spirit</item>
 				<item>Diamond Dust</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Invisibility</item>
 				<item>Lightning</item>
 				<item>Prismatic Spray</item>
@@ -31135,7 +31132,7 @@
 				<item>Control Spirit</item>
 				<item>Diamond Dust</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Invisibility</item>
 				<item>Lightning</item>
 				<item>Prismatic Spray</item>
@@ -31191,7 +31188,7 @@
 				<item>Control Spirit</item>
 				<item>Diamond Dust</item>
 				<item>Haste</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Invisibility</item>
 				<item>Lightning</item>
 				<item>Prismatic Spray</item>
@@ -31445,7 +31442,7 @@
 				<item_version>0</item_version>
 				<item>Fire Arrow</item>
 				<item>Fire Ball</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Teleport</item>
 				<item>Wall of Fire</item>
 			</knownSpells>
@@ -31493,7 +31490,7 @@
 				<count>5</count>
 				<item_version>0</item_version>
 				<item>Blizzard</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Ice Missile</item>
 				<item>Poison Cloud</item>
 				<item>Teleport</item>
@@ -31541,7 +31538,7 @@
 			<knownSpells>
 				<count>5</count>
 				<item_version>0</item_version>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Invisibility</item>
 				<item>Lightning</item>
 				<item>Prismatic Spray</item>
@@ -31591,7 +31588,7 @@
 				<count>5</count>
 				<item_version>0</item_version>
 				<item>Diamond Dust</item>
-				<item>Heal</item>
+				<item>Drain Life</item>
 				<item>Stone Curse</item>
 				<item>Teleport</item>
 				<item>Wall of Earth</item>
