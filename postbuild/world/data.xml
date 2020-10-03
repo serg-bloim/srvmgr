@@ -5179,7 +5179,7 @@
 		</item>
 		<item>
 			<name>SuperScroll Fire Arrow</name>
-			<price>1000</price>
+			<price>2000</price>
 			<weight>1</weight>
 			<effect>castSpell=Fire_Arrow:100</effect>
 		</item>
@@ -5203,7 +5203,7 @@
 		</item>
 		<item>
 			<name>SuperScroll Ice Missile</name>
-			<price>1000</price>
+			<price>2000</price>
 			<weight>1</weight>
 			<effect>castSpell=Ice_Missile:100</effect>
 		</item>
@@ -5233,7 +5233,7 @@
 		</item>
 		<item>
 			<name>SuperScroll Lightning</name>
-			<price>1000</price>
+			<price>2000</price>
 			<weight>1</weight>
 			<effect>castSpell=Lightning:100</effect>
 		</item>
@@ -5269,7 +5269,7 @@
 		</item>
 		<item>
 			<name>SuperScroll Diamond Dust</name>
-			<price>1000</price>
+			<price>2000</price>
 			<weight>1</weight>
 			<effect>castSpell=Diamond_Dust:100</effect>
 		</item>
