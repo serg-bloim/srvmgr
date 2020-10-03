@@ -743,7 +743,7 @@
 			<name>absorbtion</name>
 			<manaCost>100</manaCost>
 			<affectMin>1</affectMin>
-			<affectMax>5</affectMax>
+			<affectMax>4</affectMax>
 			<usableBy>1</usableBy>
 			<in_WarriorWeapon>100</in_WarriorWeapon>
 			<in_WarriorShield>150</in_WarriorShield>
