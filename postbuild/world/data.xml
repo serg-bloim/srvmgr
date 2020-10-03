@@ -314,20 +314,20 @@
 			<in_WarriorWeapon>0</in_WarriorWeapon>
 			<in_WarriorShield>0</in_WarriorShield>
 			<in_WarriorNotUsed3>0</in_WarriorNotUsed3>
-			<in_WarriorRing>30</in_WarriorRing>
-			<in_WarriorAmulet>30</in_WarriorAmulet>
-			<in_WarriorHelm>15</in_WarriorHelm>
-			<in_WarriorMail>15</in_WarriorMail>
-			<in_WarriorCuirass>15</in_WarriorCuirass>
-			<in_WarriorBracers>15</in_WarriorBracers>
-			<in_WarriorGauntlets>15</in_WarriorGauntlets>
+			<in_WarriorRing>0</in_WarriorRing>
+			<in_WarriorAmulet>0</in_WarriorAmulet>
+			<in_WarriorHelm>0</in_WarriorHelm>
+			<in_WarriorMail>0</in_WarriorMail>
+			<in_WarriorCuirass>0</in_WarriorCuirass>
+			<in_WarriorBracers>0</in_WarriorBracers>
+			<in_WarriorGauntlets>0</in_WarriorGauntlets>
 			<in_WarriorNotUsed11>0</in_WarriorNotUsed11>
-			<in_WarriorBoots>15</in_WarriorBoots>
+			<in_WarriorBoots>0</in_WarriorBoots>
 			<in_MageWeapon>0</in_MageWeapon>
 			<in_MageNotUsed2>0</in_MageNotUsed2>
 			<in_MageNotUsed3>0</in_MageNotUsed3>
-			<in_MageRing>30</in_MageRing>
-			<in_MageAmulet>30</in_MageAmulet>
+			<in_MageRing>0</in_MageRing>
+			<in_MageAmulet>0</in_MageAmulet>
 			<in_MageHat>15</in_MageHat>
 			<in_MageRobe>15</in_MageRobe>
 			<in_MageCloak>15</in_MageCloak>
