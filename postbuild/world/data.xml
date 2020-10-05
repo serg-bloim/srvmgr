@@ -5139,7 +5139,7 @@
 			<name>Scroll Teleport</name>
 			<price>50000</price>
 			<weight>1</weight>
-			<effect>castSpell=Teleport:24</effect>
+			<effect>castSpell=Teleport:35</effect>
 		</item>
 		<item>
 			<name>Scroll Heal</name>
@@ -5313,7 +5313,7 @@
 			<name>SuperScroll Teleport</name>
 			<price>500000</price>
 			<weight>1</weight>
-			<effect>castSpell=Teleport:60</effect>
+			<effect>castSpell=Teleport:80</effect>
 		</item>
 		<item>
 			<name>SuperScroll Heal</name>
