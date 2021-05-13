@@ -170,18 +170,6 @@ const int T_UNIT_SKIP_DRP = 0xBA38;
 const int T_UNIT_SKIP_DRP_BAR = 0xF625;
 const int T_UNIT_SKIP_DMG = 0xB203;
 int __stdcall nonStandardUnit(T_UNIT* unit, unsigned __int16 spec){
-	if(unit && unit->inventory && unit->inventory->size >= 1){
-		T_SRV_LINKED_NODE* node = unit->inventory->first_node;
-		for(int i = 0; i < 3; i++){
-			if(!node){
-				break;
-			}
-			if(node->value->id == spec){
-				return node->value->amount;
-			}
-			node=node->next;
-		}
-	}
 	return false;
 }
 #define uint32 unsigned __int32
